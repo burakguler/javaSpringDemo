@@ -10,7 +10,7 @@
 	   		
 	   		<!-- database isimli bir bean talebi olursa arka planda
 	   		MySqlCustomerDal new'ler newlenmiş nesneyi bize verir-->
-	   		<bean id="database" class="springIntro.CustomerDal"> 
+	   		<bean id="database" class="springIntro.MsSqlCustomerDal"> 
 	   			
 	   		</bean>
 
