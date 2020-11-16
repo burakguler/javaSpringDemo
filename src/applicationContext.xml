@@ -10,11 +10,14 @@
 	   		
 	   		<!-- database isimli bir bean talebi olursa arka planda
 	   		MySqlCustomerDal new'ler newlenmiş nesneyi bize verir-->
-	   		<bean id="database" class="springIntro.MsSqlCustomerDal"> 
+	   		<bean id="database" class="springIntro.CustomerDal"> 
 	   			
 	   		</bean>
 	   		<bean id="service" class="springIntro.CustomerManager"> 
-	   			<constructor-arg ref="database"/>
+<!-- 	   			<constructor-arg ref="database"/> -->
+<!--                      setter injection için bu sefer property tagi 
+						  kullanarak hangi attribute aldığını belirtiyoruz -->
+					<property name="customerDal" ref="database"/>
 	   		</bean>
 
 </beans>
