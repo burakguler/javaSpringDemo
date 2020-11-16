@@ -4,7 +4,7 @@ public class CustomerManager implements ICustomerService {
 
 	private ICustomerDal customerDal;
 	
-	//constructor injection
+	//constructor inhection
 	public CustomerManager(ICustomerDal customerDal) {
 		this.customerDal = customerDal;
 	}
